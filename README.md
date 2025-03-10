@@ -8,7 +8,7 @@
 
 
 # Introduction
-这是一个修改自https://github.com/Tomosawa/MYNOVA-SmartPower的ESP32版本
+这是一个修改自 https://github.com/Tomosawa/MYNOVA-SmartPower 的ESP32版本
 
 对应的PCB https://oshwhub.com/muyan2020/dell-fu-wu-qi-dian-yuan-qu-dian-ban-esp32
 
