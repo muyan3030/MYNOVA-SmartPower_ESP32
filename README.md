@@ -8,9 +8,9 @@
 
 
 # Introduction
-这是一个修改自 https://github.com/Tomosawa/MYNOVA-SmartPower 的ESP32版本
+This is a modified ESP32 version from https://github.com/Tomosawa/MYNOVA-SmartPower
 
-对应的PCB https://oshwhub.com/muyan2020/dell-fu-wu-qi-dian-yuan-qu-dian-ban-esp32
+Corresponding PCB https://oshwhub.com/muyan2020/dell-fu-wu-qi-dian-yuan-qu-dian-ban-esp32
 
 ## Supported Chips
 
