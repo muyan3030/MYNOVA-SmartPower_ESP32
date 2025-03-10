@@ -1,7 +1,5 @@
 <div id="top">
 <p align="center">
-  <img src="images/icon.png" width="48px" style="vertical-align:middle;display: inline-block;">
-
   <h1 align="center">MYNOVA-SmartPower</h1>
 </p>
 </div>
