@@ -7,7 +7,8 @@
 #include <U8g2lib.h>
 #include "Settings.h"
 // OLED屏幕配置
-U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, U8X8_PIN_NONE, /* clock=*/2, /* data=*/3);
+//U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, U8X8_PIN_NONE, /* clock=*/2, /* data=*/3);
+U8G2_SSD1306_128X64_NONAME_F_SW_I2C u8g2(U8G2_R0, /* clock=*/PIN_OLED_SCL, /* data=*/PIN_OLED_SDA, /* reset=*/U8X8_PIN_NONE);
 
 // 风扇图标动画
 int fan_width = 16;
