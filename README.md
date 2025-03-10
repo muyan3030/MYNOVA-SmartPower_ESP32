@@ -8,14 +8,14 @@
 # Introduction
 This is a modified ESP32 version from https://github.com/Tomosawa/MYNOVA-SmartPower
 
+**The description of the original project will not be repeated here. If necessary, you can view the original project**
+
 Corresponding PCB https://oshwhub.com/muyan2020/dell-fu-wu-qi-dian-yuan-qu-dian-ban-esp32
+
 
 ## Supported Chips
 
 - ESP32
-
-## Tested PSU
-
 
 ## Directory Structure
 
@@ -33,15 +33,6 @@ Corresponding PCB https://oshwhub.com/muyan2020/dell-fu-wu-qi-dian-yuan-qu-dian-
 - Install U8g2lib.
 - Install ESPAsyncWebServer server component.
 - Install ArduinoJson library.
-
-## Firmware Flashing Method
-
-1. Depending on the flash size of your ESP32-S3 chip (16MB or 8MB), download the corresponding bin file from the [Release](https://github.com/Tomosawa/MYNOVA-SmartPower/releases) page.
-2. Download the official [flash download tools](https://www.espressif.com/en/support/download/other-tools) or use the [esptool.py](https://github.com/espressif/esptool) command line tool.
-3. Select the appropriate `.bin` firmware file and set the flash offset address to `0x0000`.
-4. Do not check the `DoNotChgBin` option, then click start to begin the flashing process.
-
-![flashdownloadtools](images/flashtools.png)
 
 ## Filesystem Image
 
