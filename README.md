@@ -43,6 +43,12 @@ Corresponding PCB https://oshwhub.com/muyan2020/dell-fu-wu-qi-dian-yuan-qu-dian-
 
 ![flashdownloadtools](images/flashtools.png)
 
+## Filesystem Image
+
+I have generated a littlefs image file, which can be uploaded using the following method, otherwise the web interface will not be opened
+
+https://blog.csdn.net/armcsdn/article/details/140730648
+
 ## Contribution Guidelines
 
 Contributions to this project are welcome. Please follow these guidelines:
