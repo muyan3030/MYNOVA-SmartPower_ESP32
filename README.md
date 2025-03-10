@@ -108,11 +108,10 @@ Other models should be similar; further testing required as I lack additional mo
 
 ## Firmware Dependencies
 
-- Install ESP32 official development board (recommended V2.0.11 to avoid compilation failures).
+- Install ESP32 official development board
 - Install U8g2lib.
 - Install ESPAsyncWebServer server component.
 - Install ArduinoJson library.
-- Install ESP32TimerInterrupt library.
 
 ## Firmware Flashing Method
 
