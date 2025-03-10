@@ -55,7 +55,3 @@ This project is prohibited for any commercial use and is intended for learning a
 
 This project is licensed under the [GPLv3](LICENSE). [GPLv3 (GNU General Public License version 3)](LICENSE) is a free, open-source software license that guarantees users the freedoms to run, study, share, and modify the software.
 The complete text of the [GPLv3](LICENSE) license is included in the [LICENSE](LICENSE) file of this project. Before using, modifying, or distributing the code of this project, make sure you have read and understood the entire [GPLv3](LICENSE) license.
-
-## Acknowledgments
-
-- [Multibutton](https://github.com/0x1abin/MultiButton)
