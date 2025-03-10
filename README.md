@@ -5,101 +5,24 @@
   <h1 align="center">MYNOVA-SmartPower</h1>
 </p>
 </div>
-<div align="center">
 
-[![stars](https://img.shields.io/github/stars/Tomosawa/MYNOVA-SmartPower.svg)](https://github.com/Tomosawa/MYNOVA-SmartPower)
-[![forks](https://img.shields.io/github/forks/Tomosawa/MYNOVA-SmartPower.svg)](https://github.com/Tomosawa/MYNOVA-SmartPower)
-[![open issues](https://img.shields.io/github/issues-raw/Tomosawa/MYNOVA-SmartPower.svg)](https://github.com/Tomosawa/MYNOVA-SmartPower/issues)
-[![issue resolution](https://img.shields.io/github/issues-closed-raw/Tomosawa/MYNOVA-SmartPower.svg)](https://github.com/Tomosawa/MYNOVA-SmartPower/issues)
-[![GitHub contributors](https://img.shields.io/github/contributors/Tomosawa/MYNOVA-SmartPower)](https://github.com/Tomosawa/MYNOVA-SmartPower/graphs/contributors)
-[![LICENSE](https://img.shields.io/github/license/Tomosawa/MYNOVA-SmartPower)](https://github.com/Tomosawa/MYNOVA-SmartPower/blob/master/LICENSE)
-
-English | [简体中文](README_zh-CN.md) | [日本語](README_ja-JP.md)
-
-</div>
 
 # Introduction
+这是一个修改自https://github.com/Tomosawa/MYNOVA-SmartPower的ESP32版本
 
-This is an open-source hardware project aimed at creating an intelligent power extraction box for DELL server PSUs. It controls power switching, reads voltage, current, power values, and temperature inputs and displays them on an OLED screen. The device outputs 12V power through DC5.5 and XT60 interfaces for standard 12V devices.
-
-The open-source project includes firmware code for the chip, web-based application code, circuit schematics (Altium Designer and PADS), and PCB Gerber files. Additionally, 3D files of the casing are provided for 3D printing.
-
-
-Completed product can be seen in the following image:
-
-<center>
-
-<p float="left">
-  <img src="images/7.jpg" alt="Image 1" width="45%" style="margin-right:10px;"/>
-  <img src="images/8.jpg" alt="Image 2" width="45%" />
-</p>
-<p float="left">
-  <img src="images/9.jpg" alt="Image 1" width="45%" style="margin-right:10px;"/>
-  <img src="images/10.jpg" alt="Image 2" width="45%" />
-</p>
-<p float="left">
-  <img src="images/1.jpg" alt="Image 1" width="45%" style="margin-right:10px;"/>
-  <img src="images/2.jpg" alt="Image 2" width="45%" />
-</p>
-<p float="left">
-  <img src="images/3.jpg" alt="Image 1" width="45%" style="margin-right:10px;"/>
-  <img src="images/4.jpg" alt="Image 2" width="45%" />
-</p>
-<p float="left">
-  <img src="images/5.jpg" alt="Image 1" width="45%" style="margin-right:10px;"/>
-  <img src="images/6.jpg" alt="Image 2" width="45%" />
-</p>
-
-</center>
-
-## Features
-
-- Control power on and off.
-- Read and display input, output voltage, current, and power values.
-- Read power supply temperature.
-- Set fan speed (currently ineffective, overridden by the PSU itself).
-- WiFi connectivity to view data via web interface by entering IP on mobile or computer.
-- Control power on and off via web interface.
-
-
-## New Features in V1.1 (20241126)
-- Compatibility with E495E-S1 and E750E-S1 power supplies
-- Added a settings page on the device end: Access by long-pressing the right key on the network page.
-- Support for toggling WIFI on/off, hotspot on/off, and screen brightness settings
-- Support for setting the device to automatically power on after being plugged in
-- Countdown automatic shutdown feature
-- Timed on/off feature, supporting time period settings for on/off, individual on or off, and repeat cycle strategy setup
-- Conditional shutdown feature, which shuts down the device when the input or output current or power exceeds or falls below a certain value.
+对应的PCB https://oshwhub.com/muyan2020/dell-fu-wu-qi-dian-yuan-qu-dian-ban-esp32
 
 ## Supported Chips
 
-- ESP32-S3-WROOM-N16
-- ESP32-S3-WROOM-N8
-
-Or chips from the ESP32-S3 series. Depending on flash capacity of the chip, define partition table before download firmware.
+- ESP32
 
 ## Tested PSU
 
-This firmware has been tested on the following DELL PSU models:
-- F495E-S0
-- E750E-S0
-- F750E-S0
-- D750E-S2
-- E1100E-S0
-- L1100E-S0
-- D2000E-S2(EPP)
-- E495E-S1(EPP)
-- E750E-S1(EPP)
-
-Other models should be similar; further testing required as I lack additional models.
 
 ## Directory Structure
 
 - MYNOVA_POWER: Firmware code for the chip.
 - ESPVue: Web-related application code.
-- partitions: Partition table files.
-- Hardware: Hardware datasheet, including circuit schematics, design files for Altium Designer and PADS, as well as PCB Gerber files.
-- 3DModels: 3D model files for the casing, including STL and editable STEP files.
 
 ## Compilation Environment
 
