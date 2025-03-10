@@ -7,21 +7,21 @@
 #include "IOPin.h"
 #include "GUIRender.h"
 #include "pmbus.h"
-#include "ESP32TimerInterrupt.h"
+#include <Ticker.h>
 #include "EventHandle.h"
 #include "Settings.h"
 
-ESP32Timer esp32Timer(1);
+Ticker timer;  // 创建 Ticker 定时器对象
+
 extern GUIRender guiRender;
 extern int displayPage;
 extern PMBus psu;
 extern Settings settings;
 EventHandle eventHandle;
 //QueueHandle_t eventQueue;
-bool TimerHandle(void *timeNo)
+void TimerHandle()
 {
     button_ticks();
-    return true;
 }
 
 ButtonHandle::ButtonHandle()
@@ -47,11 +47,13 @@ void ButtonHandle::init()
     button_attach(pBtnRight, LONG_RRESS_START, LongPressStart_Handler_BtnRight);
     button_start(pBtnRight);
 
+    timer.attach_ms(TICKS_INTERVAL * 1000, TimerHandle);
+/*
     if (esp32Timer.attachInterruptInterval(TICKS_INTERVAL * 1000, TimerHandle))
     {
         Serial.print("Button timer started!\r\n");
     }
-
+*/
     eventHandle.init();
 }
 
