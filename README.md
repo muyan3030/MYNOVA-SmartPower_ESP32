@@ -15,8 +15,11 @@ Corresponding PCB https://oshwhub.com/muyan2020/dell-fu-wu-qi-dian-yuan-qu-dian-
 ## Update
 
 20250311
+
 Updated support for HA
+
 mynova_esp32_V1.1.1.bin
+
 littlefs_1.1.1.bin
 
 ## Supported Chips
