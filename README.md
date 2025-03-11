@@ -12,6 +12,12 @@ This is a modified ESP32 version from https://github.com/Tomosawa/MYNOVA-SmartPo
 
 Corresponding PCB https://oshwhub.com/muyan2020/dell-fu-wu-qi-dian-yuan-qu-dian-ban-esp32
 
+## Update
+
+20250311
+Updated support for HA
+mynova_esp32_V1.1.1.bin
+littlefs_1.1.1.bin
 
 ## Supported Chips
 
