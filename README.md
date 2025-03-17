@@ -21,6 +21,8 @@ Updated support for WebOTA
 mynova_esp32_V1.1.2.bin
 
 littlefs_1.1.2.bin
+![image](https://github.com/user-attachments/assets/62a3df8d-e975-40b2-87a4-96ac7137b371)
+
 
 20250311
 
