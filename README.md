@@ -33,6 +33,9 @@ mynova_esp32_V1.1.1.bin
 
 littlefs_1.1.1.bin
 
+![image](https://github.com/user-attachments/assets/495b8505-1e7b-40d8-87df-d5526033dc73)
+
+
 ## Supported Chips
 
 - ESP32
