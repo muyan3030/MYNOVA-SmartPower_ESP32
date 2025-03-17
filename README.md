@@ -53,9 +53,7 @@ littlefs_1.1.1.bin
 
 ## Filesystem Image
 
-I have generated a littlefs image file, which can be uploaded using the following method, otherwise the web interface will not be opened
-
-https://blog.csdn.net/armcsdn/article/details/140730648
+**I've generated a littlefs image file that can be written to the address @ 0x00290000 using the flash download tool **
 
 ## Contribution Guidelines
 
