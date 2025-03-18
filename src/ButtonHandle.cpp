@@ -47,7 +47,7 @@ void ButtonHandle::init()
     button_attach(pBtnRight, LONG_RRESS_START, LongPressStart_Handler_BtnRight);
     button_start(pBtnRight);
 
-    timer_button.attach_ms(TICKS_INTERVAL * 1000, TimerHandle);
+    timer_button.attach_ms(TICKS_INTERVAL, TimerHandle);
 /*
     if (esp32Timer.attachInterruptInterval(TICKS_INTERVAL * 1000, TimerHandle))
     {
