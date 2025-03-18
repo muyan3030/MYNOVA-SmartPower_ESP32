@@ -59,7 +59,7 @@ littlefs_1.1.1.bin
 
 ## Filesystem Image
 
-**I've generated a littlefs image file that can be written to the address @ 0x00290000 using the flash download tool **
+I've generated a littlefs image file that can be written to the address @ 0x00290000 using the flash download tool
 
 ## Contribution Guidelines
 
