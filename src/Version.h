@@ -6,6 +6,6 @@
 #ifndef H_VERSION_H
 #define H_VERSION_H
 
-#define FIRMWARE_VERSION    "V1.1.2"
+#define FIRMWARE_VERSION    "V1.1.3"
 
 #endif

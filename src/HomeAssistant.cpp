@@ -59,7 +59,6 @@ void onSwitchCommand(bool state, HASwitch *sender)
         {
             eventHandle.powerOff();
         }
-        // digitalWrite(RelayPin[0], LightData.LightOn[0]); // 长按打开或者关闭输出
     }
     sender->setState(state); // report state back to the Home Assistant
 }
@@ -90,6 +89,7 @@ void HA_init(PMBus *psu)
     switch1.setName("Power Switch");
     switch1.setIcon("mdi:lightbulb");
     switch1.onCommand(onSwitchCommand);
+    switch1.setCurrentState(powerOn);
 
     analogSensor1.setIcon("mdi:eye");
     analogSensor1.setName("Input voltage");
@@ -117,19 +117,19 @@ void HA_init(PMBus *psu)
 
     analogSensor7.setIcon("mdi:eye");
     analogSensor7.setName("Temperature 1");
-    analogSensor11.setUnitOfMeasurement("℃");
+    analogSensor7.setUnitOfMeasurement("℃");
 
     analogSensor8.setIcon("mdi:eye");
     analogSensor8.setName("Temperature 2");
-    analogSensor11.setUnitOfMeasurement("℃");
+    analogSensor8.setUnitOfMeasurement("℃");
 
     analogSensor9.setIcon("mdi:eye");
     analogSensor9.setName("Temperature 3");
-    analogSensor11.setUnitOfMeasurement("℃");
+    analogSensor9.setUnitOfMeasurement("℃");
 
     analogSensor10.setIcon("mdi:eye");
     analogSensor10.setName("Fan Speed");
-    analogSensor11.setUnitOfMeasurement("RPM");
+    analogSensor10.setUnitOfMeasurement("RPM");
 
     analogSensor11.setIcon("mdi:eye");
     analogSensor11.setName("MCU Temperature");
@@ -160,6 +160,8 @@ void HA_init(PMBus *psu)
 void HA_setState(bool state)
 {
     sensor.setState(state);
+    switch1.setState(state);
+    
     if (state)
         sensor.setIcon("mdi:power-plug");
     else
@@ -187,7 +189,6 @@ void HA_loop()
         }
         else
         {
-            HA_setState(powerOn);
             device.setAvailability(true);
             mqttRetryTimes = 0;
         }
@@ -235,5 +236,7 @@ void HA_tick(PMBus *psu)
     analogSensor10.setValue(psu->fan[0]);
     analogSensor11.setValue(CpuTemperature());
 
-    uptimeSensor1.setValue(static_cast<int32_t>(psu->total_power_on));
+    HA_setState(powerOn);
+
+    uptimeSensor1.setValue(static_cast<int32_t>(psu->total_power_on/1000));
 }

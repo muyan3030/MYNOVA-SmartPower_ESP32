@@ -194,6 +194,7 @@ int PMBus::scan()
 
   delay(1);
   V_out = read_linear16(READ_VOUT) / 1000.0;
+  if(V_out >0)  V_out = V_out-0.326;
 
   delay(1);
   I_out = read_linear(READ_IOUT);
