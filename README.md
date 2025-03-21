@@ -14,18 +14,27 @@ Corresponding PCB https://oshwhub.com/muyan2020/dell-fu-wu-qi-dian-yuan-qu-dian-
 
 ## Update
 
-20250317
+**20250321**
+
+fix bugs
+
+firmware_mynova_esp32_V1.1.3.bin
+
+ota_mynova_esp32_V1.1.3.bin
+
+
+**20250317**
 
 Updated support for WebOTA
 
-mynova_esp32_V1.1.2.bin
+firmware_mynova_esp32_V1.1.2.bin
 
 littlefs_1.1.2.bin
 
 ![image](https://github.com/user-attachments/assets/62a3df8d-e975-40b2-87a4-96ac7137b371)
 
 
-20250311
+**20250311**
 
 Updated support for HA
 
